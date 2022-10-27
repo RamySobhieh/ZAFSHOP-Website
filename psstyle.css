@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"poppins";
+    scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta{
+  display:inline-block;
+  padding:10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid #f59042;
+  font-size:2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition: .3s ease ;
+  transition-property: background-color,color;
+
+}
+
+/* start of products section */
+#services .services {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+    padding-bottom: 50px;
+}
+.section-title{
+    font-size:4rem;
+    font-weight:300;
+    color:black;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    letter-spacing:1rem;
+    text-align: center;
+    width:100%
+}
+.section-title span{
+color:#f59042;
+}
+#services .service-top {
+	max-width: 700px;
+	margin: 0 auto;
+}
+#services .service-top p{
+    font-size:1.2rem;
+}
+#services .service-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+ 	width: 90%;
+	margin-top: 50px;
+}
+#services  .service-item {
+	flex-basis: 80%;
+  	min-width:300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+    cursor:pointer;
+}
+#services .service-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #3c4851 0%, #2d4a60 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#services .service-bottom .icon {
+    color:white;
+    font-size: 2rem;
+    font-weight: 300;
+	margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#services .service-bottom .icon h1{
+    transition: .3s ease transform;
+}
+
+#services .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+}
+
+#services .service-item{
+	transition: .3s ease transform;
+}
+#services .service-item:hover{
+	transform: scale(1.03);
+}
+
+#services .service-item:hover h1{
+    text-shadow: 0 0 10px #f59042;
+}
+
+#services .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+
+#services .cta:hover{
+	color:white;
+    background-color: #f59042;
+}
+
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #3c4851 0%, #2d4a60 100%);
+}
+#footer .footer {
+	min-height: 150px;
+	flex-direction: column;
+  margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h1{
+  color:white;
+  font-weight: 500;
+  font-size:1.6rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+#footer h1 span{
+  color:#f59042;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: .7rem;
+}
+/* End Footer */
+
+@media only screen and (min-width: 850px){
+    /* Services Section */
+#services .service-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+}
+/* End Services Section */
+}
+
+@media only screen and (max-width: 850px){
+
+#services .service-top h1{
+    font-size:8vw;
+}
+
+#services .service-top p{
+    font-size:1rem;
+    padding: 0 20px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+#services .service-bottom .service-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+}
+#services .service-bottom .service-item .icon{
+	min-height: 288px;
+}
+}
+
